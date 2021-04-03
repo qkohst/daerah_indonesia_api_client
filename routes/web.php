@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::resource('/', 'HomeController');
+Route::resource('/provinsi', 'ProvinsiController', [
+    'only' => ['index', 'show']
+]);
