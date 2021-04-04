@@ -7,8 +7,7 @@
     <div class="col">
       <div class="card">
         <div class="card-header">
-          <h5>Kota/Kabupaten</h5>
-          <span class="d-block m-t-5">Data Kota/Kabupaten di Provinsi {{$provinsi['nama']}}</span>
+          <h5>Kabupaten</h5>
           <div class="card-header-right">
             <div class="btn-group card-option">
               <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -24,26 +23,17 @@
         </div>
         <div class="card-body table-border-style">
           <div class="table-responsive">
-            <table class="table table-hover jw-table">
+            <table class="table table-hover">
               <thead>
                 <tr>
-                  <th class="priority-1" width="10%">Nomor</th>
-                  <th class="priority-5" width="20%">Provinsi</th>
-                  <th class="priority-4" width="15%">ID Kabupaten</th>
-                  <th class="priority-3">Nama Kabupaten</th>
+                  <th>Nomor</th>
+                  <th>ID Provinsi</th>
+                  <th>Nama Provinsi</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                <?php $no = 0; ?>
-                @foreach($data_kota_kabupaten as $kota_kabupaten)
-                <?php $no++; ?>
-                <tr>
-                  <td>{{$no}}</td>
-                  <td class="priority-5">{{$provinsi['nama']}}</td>
-                  <td class="priority-4">{{$kota_kabupaten['id']}}</td>
-                  <td>{{$kota_kabupaten['nama']}}</td>
-                </tr>
-                @endforeach
+
               </tbody>
             </table>
           </div>

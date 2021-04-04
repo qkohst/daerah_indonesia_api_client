@@ -21,3 +21,6 @@ Route::resource('/', 'HomeController');
 Route::resource('/provinsi', 'ProvinsiController', [
     'only' => ['index', 'show']
 ]);
+Route::resource('/kabupaten', 'KabupatenController', [
+    'only' => ['index', 'show']
+]);

@@ -24,13 +24,13 @@
         </div>
         <div class="card-body table-border-style">
           <div class="table-responsive">
-            <table class="table table-hover">
+            <table class="table table-hover jw-table">
               <thead>
                 <tr>
-                  <th>Nomor</th>
-                  <th>ID Provinsi</th>
-                  <th>Nama Provinsi</th>
-                  <th>Aksi</th>
+                  <th class="priority-1" width="10%">Nomor</th>
+                  <th class="priority-5" width="10%">ID Provinsi</th>
+                  <th class="priority-1">Nama Provinsi</th>
+                  <th class="priority-1" width="10%">Aksi</th>
                 </tr>
               </thead>
               <tbody>
@@ -39,10 +39,10 @@
                 <?php $no++; ?>
                 <tr>
                   <td>{{$no}}</td>
-                  <td>{{$provinsi['id']}}</td>
+                  <td class="priority-5">{{$provinsi['id']}}</td>
                   <td>{{$provinsi['nama']}}</td>
                   <td>
-                    <a href="{{ route('provinsi.show', $provinsi['id']) }}" class="btn btn-sm btn-info"><i class="feather icon-eye"></i> Lihat Data Kabupaten</a>
+                    <a href="{{ route('provinsi.show', $provinsi['id']) }}" class="btn btn-sm btn-info"><i class="feather icon-eye"></i>Data Kabupaten</a>
                   </td>
                 </tr>
                 @endforeach

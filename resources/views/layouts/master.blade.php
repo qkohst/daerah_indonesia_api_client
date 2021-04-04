@@ -27,6 +27,8 @@
 
   <!-- vendor css -->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- table css -->
+  <link rel="stylesheet" href="../assets/css/table_style.css">
 </head>
 
 <body class="">
@@ -57,7 +59,7 @@
             <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Data Daerah</span></a>
             <ul class="pcoded-submenu">
               <li class=""><a href="/provinsi" class="">Provinsi</a></li>
-              <li class=""><a href="bc_badges.html" class="">Kota/Kabupaten</a></li>
+              <li class=""><a href="/kabupaten" class="">Kota/Kabupaten</a></li>
               <li class=""><a href="bc_breadcrumb-pagination.html" class="">Kecamatan</a></li>
               <li class=""><a href="bc_collapse.html" class="">Kelurahan</a></li>
             </ul>
